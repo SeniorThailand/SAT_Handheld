@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{B900F1C2-3D47-4FEC-85B3-04AAF18C3634}") = "SATUnpostedJobTransCab1", "SmartDeviceCab1.vddproj", "{F0D3DD0E-355C-484C-9FE5-F61DC8B57894}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F0D3DD0E-355C-484C-9FE5-F61DC8B57894}.Debug|Default.ActiveCfg = Debug
+		{F0D3DD0E-355C-484C-9FE5-F61DC8B57894}.Debug|Default.Build.0 = Debug
+		{F0D3DD0E-355C-484C-9FE5-F61DC8B57894}.Release|Default.ActiveCfg = Release
+		{F0D3DD0E-355C-484C-9FE5-F61DC8B57894}.Release|Default.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

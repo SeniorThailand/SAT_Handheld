@@ -1,0 +1,17 @@
+C:\Users\Anat\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\bin\Release\SmartDeviceProject1.exe
+C:\Users\Anat\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\bin\Release\SmartDeviceProject1.pdb
+C:\Users\Anat\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\bin\Release\SmartDeviceProject1.xml
+C:\Users\Anat\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\bin\Release\System.Data.Common.DLL
+C:\Users\Anat\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\bin\Release\System.Data.SqlClient.dll
+C:\Users\Anat\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\bin\Release\System.Data.SqlServerCe.dll
+C:\Users\Anat\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Anat\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmAdd.resources
+C:\Users\Anat\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmEdit.resources
+C:\Users\Anat\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmHome.resources
+C:\Users\Anat\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmMain.resources
+C:\Users\Anat\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Resources.resources
+C:\Users\Anat\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\obj\Release\SmartDeviceProject1.vbproj.GenerateResource.Cache
+C:\Users\Anat\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\obj\Release\SmartDeviceProject1.exe
+C:\Users\Anat\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\obj\Release\SmartDeviceProject1.xml
+C:\Users\Anat\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\obj\Release\SmartDeviceProject1.pdb
+C:\Users\Anat\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmTest.resources

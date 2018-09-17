@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SATUnpostedJobTrans", "SmartDeviceProject1\SATUnpostedJobTrans.vbproj", "{F35F9594-3386-4587-B7D5-1130818C0C5C}"
+EndProject
+Project("{B900F1C2-3D47-4FEC-85B3-04AAF18C3634}") = "SATUnpostedJobTransCab1", "SmartDeviceCab1\SmartDeviceCab1.vddproj", "{533AB833-E0F2-4590-8BF9-C4CCF29A40A1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F35F9594-3386-4587-B7D5-1130818C0C5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F35F9594-3386-4587-B7D5-1130818C0C5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F35F9594-3386-4587-B7D5-1130818C0C5C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F35F9594-3386-4587-B7D5-1130818C0C5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F35F9594-3386-4587-B7D5-1130818C0C5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F35F9594-3386-4587-B7D5-1130818C0C5C}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{533AB833-E0F2-4590-8BF9-C4CCF29A40A1}.Debug|Any CPU.ActiveCfg = Debug
+		{533AB833-E0F2-4590-8BF9-C4CCF29A40A1}.Debug|Any CPU.Build.0 = Debug
+		{533AB833-E0F2-4590-8BF9-C4CCF29A40A1}.Release|Any CPU.ActiveCfg = Release
+		{533AB833-E0F2-4590-8BF9-C4CCF29A40A1}.Release|Any CPU.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,28 @@
+C:\Users\Anat\AppData\Local\Temporary Projects\SmartDeviceProject1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Anat\AppData\Local\Temporary Projects\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Form1.resources
+C:\Users\Anat\AppData\Local\Temporary Projects\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Resources.resources
+C:\Users\Anat\AppData\Local\Temporary Projects\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.vbproj.GenerateResource.Cache
+C:\Users\Anat\AppData\Local\Temporary Projects\SmartDeviceProject1\bin\Debug\SmartDeviceProject1.exe
+C:\Users\Anat\AppData\Local\Temporary Projects\SmartDeviceProject1\bin\Debug\SmartDeviceProject1.pdb
+C:\Users\Anat\AppData\Local\Temporary Projects\SmartDeviceProject1\bin\Debug\SmartDeviceProject1.xml
+C:\Users\Anat\AppData\Local\Temporary Projects\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.exe
+C:\Users\Anat\AppData\Local\Temporary Projects\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.xml
+C:\Users\Anat\AppData\Local\Temporary Projects\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.pdb
+C:\Users\Anat\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\bin\Debug\SmartDeviceProject1.exe
+C:\Users\Anat\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\bin\Debug\SmartDeviceProject1.pdb
+C:\Users\Anat\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\bin\Debug\SmartDeviceProject1.xml
+C:\Users\Anat\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Anat\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Resources.resources
+C:\Users\Anat\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.vbproj.GenerateResource.Cache
+C:\Users\Anat\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.exe
+C:\Users\Anat\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.xml
+C:\Users\Anat\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.pdb
+C:\Users\Anat\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\bin\Debug\AppDatabase1.sdf
+C:\Users\Anat\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.frmHome.resources
+C:\Users\Anat\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.frmMain.resources
+C:\Users\Anat\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\Anat\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.frmAdd.resources
+C:\Users\Anat\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.frmEdit.resources
+C:\Users\Anat\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\bin\Debug\System.Data.Common.DLL
+C:\Users\Anat\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Anat\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\bin\Debug\System.SR.dll

@@ -1,0 +1,1968 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="connectDB">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strConn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="connectDBResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="connectDBResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="selectData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strJob" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="suffix" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="selectDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="selectDataResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="selectDataBillet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="item" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="selectDataBilletResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="selectDataBilletResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="selectDataJobItem">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strJob" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strSuffix" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="selectDataJobItemResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="selectDataJobItemResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="selectData_Test">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strJob" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="suffix" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="selectData_TestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="selectData_TestResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="selectDataTO">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strTrnNum" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="selectDataTOResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="selectDataTOResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PrintLable">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strLable" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PrintLableResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="PrintLabelBillet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strPO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strPOLine" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="qty" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PrintLabelBilletResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="PrintLabelBilletDirect">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strItem" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strLot" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="qty" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PrintLabelBilletDirectResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="PrintLabelAEPacking">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strJob" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strSuffix" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PrintLabelAEPackingResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="PrintLabelAEPacking_test">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strJob" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strSuffix" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PrintLabelAEPacking_testResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="MoveLocation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strJob" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="strSuffix" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="loc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MoveLocationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MoveLocationResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MoveSILocation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strJob" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="strSuffix" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="strSloc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strEloc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="qty_move" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MoveSILocationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MoveSILocationResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MovePackingLocation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strItem" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strLot" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strSWhse" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strEWhse" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strSloc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strEloc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="qty_move" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MovePackingLocationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MovePackingLocationResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="selectReason">
+        <s:complexType />
+      </s:element>
+      <s:element name="selectReasonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="selectReasonResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="selectMiscIssueReason">
+        <s:complexType />
+      </s:element>
+      <s:element name="selectMiscIssueReasonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="selectMiscIssueReasonResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="selectFaultCode">
+        <s:complexType />
+      </s:element>
+      <s:element name="selectFaultCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="selectFaultCodeResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="selectLot">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strItem" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="selectLotResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="selectLotResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="selectQty">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strJob" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="suffix" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="selectQtyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="selectQtyResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="selectQty_rev1">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strJob" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="suffix" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="oper" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="selectQty_rev1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="selectQty_rev1Result" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="selectQty_rev2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strJob" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="suffix" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="oper" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="selectQty_rev2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="selectQty_rev2Result" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getQtyBeforeMove">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strJob" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="suffix" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getQtyBeforeMoveResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getQtyBeforeMoveResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getQtyBeforeMoveWH">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strItem" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strLot" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strLoc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getQtyBeforeMoveWHResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getQtyBeforeMoveWHResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getJobFromItemLot">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strItem" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strLot" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getJobFromItemLotResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getJobFromItemLotResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TranferExits">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strTrnNum" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TranferExitsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TranferExitsResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TranferCheckCust">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strTrnNum" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TranferCheckCustResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TranferCheckCustResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertJobTrans">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strJob" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="strSuffix" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="oper" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="qtyRel" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="qtyScrap" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="strReason" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertJobTransResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="insertJobTransResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertJobTrans_rev1">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strJob" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="strSuffix" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="oper" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="qtyRel" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="qtyScrap" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="strReason" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strCause" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strFeature" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertJobTrans_rev1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="insertJobTrans_rev1Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertManifest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Seq" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="strPOCust" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strItemCust" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strSNYN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strItem" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="strQty" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="strLoc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strPlant" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strCofC" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertManifestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="insertManifestResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertTrnItem">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strTrnNum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strBox" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strJob" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="strSuffix" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="qty" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="fprint" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertTrnItemResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="insertTrnItemResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PrintLableSingle">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strJob" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strSuffix" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PrintLableSingleResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="insertSerial">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strTO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strBox" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strCofC" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strItem" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strLot" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="qty" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="strSerial" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertSerialResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="insertSerialResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrnItemQtyRemain">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strTO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strItem" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strCoC" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrnItemQtyRemainResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TrnItemQtyRemainResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getQtyMove1">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strItem" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strLot" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getQtyMove1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getQtyMove1Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getChemLastestLot">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strItem" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strLot" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getChemLastestLotResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getChemLastestLotResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MoveBillet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strItem" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strLot" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strSLoc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strELoc" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="qty" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MoveBilletResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MoveBilletResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PrintCofCToReport">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sCustInvNum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="eCustInvNum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sCofCNum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="eCofCNum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sCofCDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="eCofCDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sDoc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PrintCofCToReportResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PrintCofCToReportResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertIHCCheck">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strJob" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strSuffix" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="qty" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertIHCCheckResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="insertIHCCheckResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getQtyIHC">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strJob" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="suffix" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getQtyIHCResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="getQtyIHCResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="closeConnection">
+        <s:complexType />
+      </s:element>
+      <s:element name="closeConnectionResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="PrintLabelGRN">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strGRN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strGRNLine" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PrintLabelGRNResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="SAT_MiscIssue">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strItem" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Qty_issue" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="strWhse" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strLoc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strLot" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strReason" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SAT_MiscIssueResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SAT_MiscIssueResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="connectDBSoapIn">
+    <wsdl:part name="parameters" element="tns:connectDB" />
+  </wsdl:message>
+  <wsdl:message name="connectDBSoapOut">
+    <wsdl:part name="parameters" element="tns:connectDBResponse" />
+  </wsdl:message>
+  <wsdl:message name="selectDataSoapIn">
+    <wsdl:part name="parameters" element="tns:selectData" />
+  </wsdl:message>
+  <wsdl:message name="selectDataSoapOut">
+    <wsdl:part name="parameters" element="tns:selectDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="selectDataBilletSoapIn">
+    <wsdl:part name="parameters" element="tns:selectDataBillet" />
+  </wsdl:message>
+  <wsdl:message name="selectDataBilletSoapOut">
+    <wsdl:part name="parameters" element="tns:selectDataBilletResponse" />
+  </wsdl:message>
+  <wsdl:message name="selectDataJobItemSoapIn">
+    <wsdl:part name="parameters" element="tns:selectDataJobItem" />
+  </wsdl:message>
+  <wsdl:message name="selectDataJobItemSoapOut">
+    <wsdl:part name="parameters" element="tns:selectDataJobItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="selectData_TestSoapIn">
+    <wsdl:part name="parameters" element="tns:selectData_Test" />
+  </wsdl:message>
+  <wsdl:message name="selectData_TestSoapOut">
+    <wsdl:part name="parameters" element="tns:selectData_TestResponse" />
+  </wsdl:message>
+  <wsdl:message name="selectDataTOSoapIn">
+    <wsdl:part name="parameters" element="tns:selectDataTO" />
+  </wsdl:message>
+  <wsdl:message name="selectDataTOSoapOut">
+    <wsdl:part name="parameters" element="tns:selectDataTOResponse" />
+  </wsdl:message>
+  <wsdl:message name="PrintLableSoapIn">
+    <wsdl:part name="parameters" element="tns:PrintLable" />
+  </wsdl:message>
+  <wsdl:message name="PrintLableSoapOut">
+    <wsdl:part name="parameters" element="tns:PrintLableResponse" />
+  </wsdl:message>
+  <wsdl:message name="PrintLabelBilletSoapIn">
+    <wsdl:part name="parameters" element="tns:PrintLabelBillet" />
+  </wsdl:message>
+  <wsdl:message name="PrintLabelBilletSoapOut">
+    <wsdl:part name="parameters" element="tns:PrintLabelBilletResponse" />
+  </wsdl:message>
+  <wsdl:message name="PrintLabelBilletDirectSoapIn">
+    <wsdl:part name="parameters" element="tns:PrintLabelBilletDirect" />
+  </wsdl:message>
+  <wsdl:message name="PrintLabelBilletDirectSoapOut">
+    <wsdl:part name="parameters" element="tns:PrintLabelBilletDirectResponse" />
+  </wsdl:message>
+  <wsdl:message name="PrintLabelAEPackingSoapIn">
+    <wsdl:part name="parameters" element="tns:PrintLabelAEPacking" />
+  </wsdl:message>
+  <wsdl:message name="PrintLabelAEPackingSoapOut">
+    <wsdl:part name="parameters" element="tns:PrintLabelAEPackingResponse" />
+  </wsdl:message>
+  <wsdl:message name="PrintLabelAEPacking_testSoapIn">
+    <wsdl:part name="parameters" element="tns:PrintLabelAEPacking_test" />
+  </wsdl:message>
+  <wsdl:message name="PrintLabelAEPacking_testSoapOut">
+    <wsdl:part name="parameters" element="tns:PrintLabelAEPacking_testResponse" />
+  </wsdl:message>
+  <wsdl:message name="MoveLocationSoapIn">
+    <wsdl:part name="parameters" element="tns:MoveLocation" />
+  </wsdl:message>
+  <wsdl:message name="MoveLocationSoapOut">
+    <wsdl:part name="parameters" element="tns:MoveLocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="MoveSILocationSoapIn">
+    <wsdl:part name="parameters" element="tns:MoveSILocation" />
+  </wsdl:message>
+  <wsdl:message name="MoveSILocationSoapOut">
+    <wsdl:part name="parameters" element="tns:MoveSILocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="MovePackingLocationSoapIn">
+    <wsdl:part name="parameters" element="tns:MovePackingLocation" />
+  </wsdl:message>
+  <wsdl:message name="MovePackingLocationSoapOut">
+    <wsdl:part name="parameters" element="tns:MovePackingLocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="selectReasonSoapIn">
+    <wsdl:part name="parameters" element="tns:selectReason" />
+  </wsdl:message>
+  <wsdl:message name="selectReasonSoapOut">
+    <wsdl:part name="parameters" element="tns:selectReasonResponse" />
+  </wsdl:message>
+  <wsdl:message name="selectMiscIssueReasonSoapIn">
+    <wsdl:part name="parameters" element="tns:selectMiscIssueReason" />
+  </wsdl:message>
+  <wsdl:message name="selectMiscIssueReasonSoapOut">
+    <wsdl:part name="parameters" element="tns:selectMiscIssueReasonResponse" />
+  </wsdl:message>
+  <wsdl:message name="selectFaultCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:selectFaultCode" />
+  </wsdl:message>
+  <wsdl:message name="selectFaultCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:selectFaultCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="selectLotSoapIn">
+    <wsdl:part name="parameters" element="tns:selectLot" />
+  </wsdl:message>
+  <wsdl:message name="selectLotSoapOut">
+    <wsdl:part name="parameters" element="tns:selectLotResponse" />
+  </wsdl:message>
+  <wsdl:message name="selectQtySoapIn">
+    <wsdl:part name="parameters" element="tns:selectQty" />
+  </wsdl:message>
+  <wsdl:message name="selectQtySoapOut">
+    <wsdl:part name="parameters" element="tns:selectQtyResponse" />
+  </wsdl:message>
+  <wsdl:message name="selectQty_rev1SoapIn">
+    <wsdl:part name="parameters" element="tns:selectQty_rev1" />
+  </wsdl:message>
+  <wsdl:message name="selectQty_rev1SoapOut">
+    <wsdl:part name="parameters" element="tns:selectQty_rev1Response" />
+  </wsdl:message>
+  <wsdl:message name="selectQty_rev2SoapIn">
+    <wsdl:part name="parameters" element="tns:selectQty_rev2" />
+  </wsdl:message>
+  <wsdl:message name="selectQty_rev2SoapOut">
+    <wsdl:part name="parameters" element="tns:selectQty_rev2Response" />
+  </wsdl:message>
+  <wsdl:message name="getQtyBeforeMoveSoapIn">
+    <wsdl:part name="parameters" element="tns:getQtyBeforeMove" />
+  </wsdl:message>
+  <wsdl:message name="getQtyBeforeMoveSoapOut">
+    <wsdl:part name="parameters" element="tns:getQtyBeforeMoveResponse" />
+  </wsdl:message>
+  <wsdl:message name="getQtyBeforeMoveWHSoapIn">
+    <wsdl:part name="parameters" element="tns:getQtyBeforeMoveWH" />
+  </wsdl:message>
+  <wsdl:message name="getQtyBeforeMoveWHSoapOut">
+    <wsdl:part name="parameters" element="tns:getQtyBeforeMoveWHResponse" />
+  </wsdl:message>
+  <wsdl:message name="getJobFromItemLotSoapIn">
+    <wsdl:part name="parameters" element="tns:getJobFromItemLot" />
+  </wsdl:message>
+  <wsdl:message name="getJobFromItemLotSoapOut">
+    <wsdl:part name="parameters" element="tns:getJobFromItemLotResponse" />
+  </wsdl:message>
+  <wsdl:message name="TranferExitsSoapIn">
+    <wsdl:part name="parameters" element="tns:TranferExits" />
+  </wsdl:message>
+  <wsdl:message name="TranferExitsSoapOut">
+    <wsdl:part name="parameters" element="tns:TranferExitsResponse" />
+  </wsdl:message>
+  <wsdl:message name="TranferCheckCustSoapIn">
+    <wsdl:part name="parameters" element="tns:TranferCheckCust" />
+  </wsdl:message>
+  <wsdl:message name="TranferCheckCustSoapOut">
+    <wsdl:part name="parameters" element="tns:TranferCheckCustResponse" />
+  </wsdl:message>
+  <wsdl:message name="insertJobTransSoapIn">
+    <wsdl:part name="parameters" element="tns:insertJobTrans" />
+  </wsdl:message>
+  <wsdl:message name="insertJobTransSoapOut">
+    <wsdl:part name="parameters" element="tns:insertJobTransResponse" />
+  </wsdl:message>
+  <wsdl:message name="insertJobTrans_rev1SoapIn">
+    <wsdl:part name="parameters" element="tns:insertJobTrans_rev1" />
+  </wsdl:message>
+  <wsdl:message name="insertJobTrans_rev1SoapOut">
+    <wsdl:part name="parameters" element="tns:insertJobTrans_rev1Response" />
+  </wsdl:message>
+  <wsdl:message name="insertManifestSoapIn">
+    <wsdl:part name="parameters" element="tns:insertManifest" />
+  </wsdl:message>
+  <wsdl:message name="insertManifestSoapOut">
+    <wsdl:part name="parameters" element="tns:insertManifestResponse" />
+  </wsdl:message>
+  <wsdl:message name="insertTrnItemSoapIn">
+    <wsdl:part name="parameters" element="tns:insertTrnItem" />
+  </wsdl:message>
+  <wsdl:message name="insertTrnItemSoapOut">
+    <wsdl:part name="parameters" element="tns:insertTrnItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="PrintLableSingleSoapIn">
+    <wsdl:part name="parameters" element="tns:PrintLableSingle" />
+  </wsdl:message>
+  <wsdl:message name="PrintLableSingleSoapOut">
+    <wsdl:part name="parameters" element="tns:PrintLableSingleResponse" />
+  </wsdl:message>
+  <wsdl:message name="insertSerialSoapIn">
+    <wsdl:part name="parameters" element="tns:insertSerial" />
+  </wsdl:message>
+  <wsdl:message name="insertSerialSoapOut">
+    <wsdl:part name="parameters" element="tns:insertSerialResponse" />
+  </wsdl:message>
+  <wsdl:message name="TrnItemQtyRemainSoapIn">
+    <wsdl:part name="parameters" element="tns:TrnItemQtyRemain" />
+  </wsdl:message>
+  <wsdl:message name="TrnItemQtyRemainSoapOut">
+    <wsdl:part name="parameters" element="tns:TrnItemQtyRemainResponse" />
+  </wsdl:message>
+  <wsdl:message name="getQtyMove1SoapIn">
+    <wsdl:part name="parameters" element="tns:getQtyMove1" />
+  </wsdl:message>
+  <wsdl:message name="getQtyMove1SoapOut">
+    <wsdl:part name="parameters" element="tns:getQtyMove1Response" />
+  </wsdl:message>
+  <wsdl:message name="getChemLastestLotSoapIn">
+    <wsdl:part name="parameters" element="tns:getChemLastestLot" />
+  </wsdl:message>
+  <wsdl:message name="getChemLastestLotSoapOut">
+    <wsdl:part name="parameters" element="tns:getChemLastestLotResponse" />
+  </wsdl:message>
+  <wsdl:message name="MoveBilletSoapIn">
+    <wsdl:part name="parameters" element="tns:MoveBillet" />
+  </wsdl:message>
+  <wsdl:message name="MoveBilletSoapOut">
+    <wsdl:part name="parameters" element="tns:MoveBilletResponse" />
+  </wsdl:message>
+  <wsdl:message name="PrintCofCToReportSoapIn">
+    <wsdl:part name="parameters" element="tns:PrintCofCToReport" />
+  </wsdl:message>
+  <wsdl:message name="PrintCofCToReportSoapOut">
+    <wsdl:part name="parameters" element="tns:PrintCofCToReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="insertIHCCheckSoapIn">
+    <wsdl:part name="parameters" element="tns:insertIHCCheck" />
+  </wsdl:message>
+  <wsdl:message name="insertIHCCheckSoapOut">
+    <wsdl:part name="parameters" element="tns:insertIHCCheckResponse" />
+  </wsdl:message>
+  <wsdl:message name="getQtyIHCSoapIn">
+    <wsdl:part name="parameters" element="tns:getQtyIHC" />
+  </wsdl:message>
+  <wsdl:message name="getQtyIHCSoapOut">
+    <wsdl:part name="parameters" element="tns:getQtyIHCResponse" />
+  </wsdl:message>
+  <wsdl:message name="closeConnectionSoapIn">
+    <wsdl:part name="parameters" element="tns:closeConnection" />
+  </wsdl:message>
+  <wsdl:message name="closeConnectionSoapOut">
+    <wsdl:part name="parameters" element="tns:closeConnectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="PrintLabelGRNSoapIn">
+    <wsdl:part name="parameters" element="tns:PrintLabelGRN" />
+  </wsdl:message>
+  <wsdl:message name="PrintLabelGRNSoapOut">
+    <wsdl:part name="parameters" element="tns:PrintLabelGRNResponse" />
+  </wsdl:message>
+  <wsdl:message name="SAT_MiscIssueSoapIn">
+    <wsdl:part name="parameters" element="tns:SAT_MiscIssue" />
+  </wsdl:message>
+  <wsdl:message name="SAT_MiscIssueSoapOut">
+    <wsdl:part name="parameters" element="tns:SAT_MiscIssueResponse" />
+  </wsdl:message>
+  <wsdl:portType name="SATWebSVSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="connectDB">
+      <wsdl:input message="tns:connectDBSoapIn" />
+      <wsdl:output message="tns:connectDBSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="selectData">
+      <wsdl:input message="tns:selectDataSoapIn" />
+      <wsdl:output message="tns:selectDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="selectDataBillet">
+      <wsdl:input message="tns:selectDataBilletSoapIn" />
+      <wsdl:output message="tns:selectDataBilletSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="selectDataJobItem">
+      <wsdl:input message="tns:selectDataJobItemSoapIn" />
+      <wsdl:output message="tns:selectDataJobItemSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="selectData_Test">
+      <wsdl:input message="tns:selectData_TestSoapIn" />
+      <wsdl:output message="tns:selectData_TestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="selectDataTO">
+      <wsdl:input message="tns:selectDataTOSoapIn" />
+      <wsdl:output message="tns:selectDataTOSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PrintLable">
+      <wsdl:input message="tns:PrintLableSoapIn" />
+      <wsdl:output message="tns:PrintLableSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PrintLabelBillet">
+      <wsdl:input message="tns:PrintLabelBilletSoapIn" />
+      <wsdl:output message="tns:PrintLabelBilletSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PrintLabelBilletDirect">
+      <wsdl:input message="tns:PrintLabelBilletDirectSoapIn" />
+      <wsdl:output message="tns:PrintLabelBilletDirectSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PrintLabelAEPacking">
+      <wsdl:input message="tns:PrintLabelAEPackingSoapIn" />
+      <wsdl:output message="tns:PrintLabelAEPackingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PrintLabelAEPacking_test">
+      <wsdl:input message="tns:PrintLabelAEPacking_testSoapIn" />
+      <wsdl:output message="tns:PrintLabelAEPacking_testSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MoveLocation">
+      <wsdl:input message="tns:MoveLocationSoapIn" />
+      <wsdl:output message="tns:MoveLocationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MoveSILocation">
+      <wsdl:input message="tns:MoveSILocationSoapIn" />
+      <wsdl:output message="tns:MoveSILocationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MovePackingLocation">
+      <wsdl:input message="tns:MovePackingLocationSoapIn" />
+      <wsdl:output message="tns:MovePackingLocationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="selectReason">
+      <wsdl:input message="tns:selectReasonSoapIn" />
+      <wsdl:output message="tns:selectReasonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="selectMiscIssueReason">
+      <wsdl:input message="tns:selectMiscIssueReasonSoapIn" />
+      <wsdl:output message="tns:selectMiscIssueReasonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="selectFaultCode">
+      <wsdl:input message="tns:selectFaultCodeSoapIn" />
+      <wsdl:output message="tns:selectFaultCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="selectLot">
+      <wsdl:input message="tns:selectLotSoapIn" />
+      <wsdl:output message="tns:selectLotSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="selectQty">
+      <wsdl:input message="tns:selectQtySoapIn" />
+      <wsdl:output message="tns:selectQtySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="selectQty_rev1">
+      <wsdl:input message="tns:selectQty_rev1SoapIn" />
+      <wsdl:output message="tns:selectQty_rev1SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="selectQty_rev2">
+      <wsdl:input message="tns:selectQty_rev2SoapIn" />
+      <wsdl:output message="tns:selectQty_rev2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getQtyBeforeMove">
+      <wsdl:input message="tns:getQtyBeforeMoveSoapIn" />
+      <wsdl:output message="tns:getQtyBeforeMoveSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getQtyBeforeMoveWH">
+      <wsdl:input message="tns:getQtyBeforeMoveWHSoapIn" />
+      <wsdl:output message="tns:getQtyBeforeMoveWHSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getJobFromItemLot">
+      <wsdl:input message="tns:getJobFromItemLotSoapIn" />
+      <wsdl:output message="tns:getJobFromItemLotSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TranferExits">
+      <wsdl:input message="tns:TranferExitsSoapIn" />
+      <wsdl:output message="tns:TranferExitsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TranferCheckCust">
+      <wsdl:input message="tns:TranferCheckCustSoapIn" />
+      <wsdl:output message="tns:TranferCheckCustSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="insertJobTrans">
+      <wsdl:input message="tns:insertJobTransSoapIn" />
+      <wsdl:output message="tns:insertJobTransSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="insertJobTrans_rev1">
+      <wsdl:input message="tns:insertJobTrans_rev1SoapIn" />
+      <wsdl:output message="tns:insertJobTrans_rev1SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="insertManifest">
+      <wsdl:input message="tns:insertManifestSoapIn" />
+      <wsdl:output message="tns:insertManifestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="insertTrnItem">
+      <wsdl:input message="tns:insertTrnItemSoapIn" />
+      <wsdl:output message="tns:insertTrnItemSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PrintLableSingle">
+      <wsdl:input message="tns:PrintLableSingleSoapIn" />
+      <wsdl:output message="tns:PrintLableSingleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="insertSerial">
+      <wsdl:input message="tns:insertSerialSoapIn" />
+      <wsdl:output message="tns:insertSerialSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrnItemQtyRemain">
+      <wsdl:input message="tns:TrnItemQtyRemainSoapIn" />
+      <wsdl:output message="tns:TrnItemQtyRemainSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getQtyMove1">
+      <wsdl:input message="tns:getQtyMove1SoapIn" />
+      <wsdl:output message="tns:getQtyMove1SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getChemLastestLot">
+      <wsdl:input message="tns:getChemLastestLotSoapIn" />
+      <wsdl:output message="tns:getChemLastestLotSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MoveBillet">
+      <wsdl:input message="tns:MoveBilletSoapIn" />
+      <wsdl:output message="tns:MoveBilletSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PrintCofCToReport">
+      <wsdl:input message="tns:PrintCofCToReportSoapIn" />
+      <wsdl:output message="tns:PrintCofCToReportSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="insertIHCCheck">
+      <wsdl:input message="tns:insertIHCCheckSoapIn" />
+      <wsdl:output message="tns:insertIHCCheckSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getQtyIHC">
+      <wsdl:input message="tns:getQtyIHCSoapIn" />
+      <wsdl:output message="tns:getQtyIHCSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="closeConnection">
+      <wsdl:input message="tns:closeConnectionSoapIn" />
+      <wsdl:output message="tns:closeConnectionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PrintLabelGRN">
+      <wsdl:input message="tns:PrintLabelGRNSoapIn" />
+      <wsdl:output message="tns:PrintLabelGRNSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SAT_MiscIssue">
+      <wsdl:input message="tns:SAT_MiscIssueSoapIn" />
+      <wsdl:output message="tns:SAT_MiscIssueSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SATWebSVSoap" type="tns:SATWebSVSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="connectDB">
+      <soap:operation soapAction="http://tempuri.org/connectDB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectData">
+      <soap:operation soapAction="http://tempuri.org/selectData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectDataBillet">
+      <soap:operation soapAction="http://tempuri.org/selectDataBillet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectDataJobItem">
+      <soap:operation soapAction="http://tempuri.org/selectDataJobItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectData_Test">
+      <soap:operation soapAction="http://tempuri.org/selectData_Test" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectDataTO">
+      <soap:operation soapAction="http://tempuri.org/selectDataTO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PrintLable">
+      <soap:operation soapAction="http://tempuri.org/PrintLable" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PrintLabelBillet">
+      <soap:operation soapAction="http://tempuri.org/PrintLabelBillet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PrintLabelBilletDirect">
+      <soap:operation soapAction="http://tempuri.org/PrintLabelBilletDirect" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PrintLabelAEPacking">
+      <soap:operation soapAction="http://tempuri.org/PrintLabelAEPacking" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PrintLabelAEPacking_test">
+      <soap:operation soapAction="http://tempuri.org/PrintLabelAEPacking_test" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MoveLocation">
+      <soap:operation soapAction="http://tempuri.org/MoveLocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MoveSILocation">
+      <soap:operation soapAction="http://tempuri.org/MoveSILocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MovePackingLocation">
+      <soap:operation soapAction="http://tempuri.org/MovePackingLocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectReason">
+      <soap:operation soapAction="http://tempuri.org/selectReason" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectMiscIssueReason">
+      <soap:operation soapAction="http://tempuri.org/selectMiscIssueReason" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectFaultCode">
+      <soap:operation soapAction="http://tempuri.org/selectFaultCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectLot">
+      <soap:operation soapAction="http://tempuri.org/selectLot" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectQty">
+      <soap:operation soapAction="http://tempuri.org/selectQty" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectQty_rev1">
+      <soap:operation soapAction="http://tempuri.org/selectQty_rev1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectQty_rev2">
+      <soap:operation soapAction="http://tempuri.org/selectQty_rev2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getQtyBeforeMove">
+      <soap:operation soapAction="http://tempuri.org/getQtyBeforeMove" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getQtyBeforeMoveWH">
+      <soap:operation soapAction="http://tempuri.org/getQtyBeforeMoveWH" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getJobFromItemLot">
+      <soap:operation soapAction="http://tempuri.org/getJobFromItemLot" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TranferExits">
+      <soap:operation soapAction="http://tempuri.org/TranferExits" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TranferCheckCust">
+      <soap:operation soapAction="http://tempuri.org/TranferCheckCust" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertJobTrans">
+      <soap:operation soapAction="http://tempuri.org/insertJobTrans" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertJobTrans_rev1">
+      <soap:operation soapAction="http://tempuri.org/insertJobTrans_rev1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertManifest">
+      <soap:operation soapAction="http://tempuri.org/insertManifest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertTrnItem">
+      <soap:operation soapAction="http://tempuri.org/insertTrnItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PrintLableSingle">
+      <soap:operation soapAction="http://tempuri.org/PrintLableSingle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertSerial">
+      <soap:operation soapAction="http://tempuri.org/insertSerial" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrnItemQtyRemain">
+      <soap:operation soapAction="http://tempuri.org/TrnItemQtyRemain" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getQtyMove1">
+      <soap:operation soapAction="http://tempuri.org/getQtyMove1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getChemLastestLot">
+      <soap:operation soapAction="http://tempuri.org/getChemLastestLot" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MoveBillet">
+      <soap:operation soapAction="http://tempuri.org/MoveBillet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PrintCofCToReport">
+      <soap:operation soapAction="http://tempuri.org/PrintCofCToReport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertIHCCheck">
+      <soap:operation soapAction="http://tempuri.org/insertIHCCheck" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getQtyIHC">
+      <soap:operation soapAction="http://tempuri.org/getQtyIHC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="closeConnection">
+      <soap:operation soapAction="http://tempuri.org/closeConnection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PrintLabelGRN">
+      <soap:operation soapAction="http://tempuri.org/PrintLabelGRN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SAT_MiscIssue">
+      <soap:operation soapAction="http://tempuri.org/SAT_MiscIssue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SATWebSVSoap12" type="tns:SATWebSVSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="connectDB">
+      <soap12:operation soapAction="http://tempuri.org/connectDB" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectData">
+      <soap12:operation soapAction="http://tempuri.org/selectData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectDataBillet">
+      <soap12:operation soapAction="http://tempuri.org/selectDataBillet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectDataJobItem">
+      <soap12:operation soapAction="http://tempuri.org/selectDataJobItem" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectData_Test">
+      <soap12:operation soapAction="http://tempuri.org/selectData_Test" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectDataTO">
+      <soap12:operation soapAction="http://tempuri.org/selectDataTO" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PrintLable">
+      <soap12:operation soapAction="http://tempuri.org/PrintLable" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PrintLabelBillet">
+      <soap12:operation soapAction="http://tempuri.org/PrintLabelBillet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PrintLabelBilletDirect">
+      <soap12:operation soapAction="http://tempuri.org/PrintLabelBilletDirect" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PrintLabelAEPacking">
+      <soap12:operation soapAction="http://tempuri.org/PrintLabelAEPacking" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PrintLabelAEPacking_test">
+      <soap12:operation soapAction="http://tempuri.org/PrintLabelAEPacking_test" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MoveLocation">
+      <soap12:operation soapAction="http://tempuri.org/MoveLocation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MoveSILocation">
+      <soap12:operation soapAction="http://tempuri.org/MoveSILocation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MovePackingLocation">
+      <soap12:operation soapAction="http://tempuri.org/MovePackingLocation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectReason">
+      <soap12:operation soapAction="http://tempuri.org/selectReason" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectMiscIssueReason">
+      <soap12:operation soapAction="http://tempuri.org/selectMiscIssueReason" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectFaultCode">
+      <soap12:operation soapAction="http://tempuri.org/selectFaultCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectLot">
+      <soap12:operation soapAction="http://tempuri.org/selectLot" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectQty">
+      <soap12:operation soapAction="http://tempuri.org/selectQty" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectQty_rev1">
+      <soap12:operation soapAction="http://tempuri.org/selectQty_rev1" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectQty_rev2">
+      <soap12:operation soapAction="http://tempuri.org/selectQty_rev2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getQtyBeforeMove">
+      <soap12:operation soapAction="http://tempuri.org/getQtyBeforeMove" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getQtyBeforeMoveWH">
+      <soap12:operation soapAction="http://tempuri.org/getQtyBeforeMoveWH" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getJobFromItemLot">
+      <soap12:operation soapAction="http://tempuri.org/getJobFromItemLot" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TranferExits">
+      <soap12:operation soapAction="http://tempuri.org/TranferExits" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TranferCheckCust">
+      <soap12:operation soapAction="http://tempuri.org/TranferCheckCust" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertJobTrans">
+      <soap12:operation soapAction="http://tempuri.org/insertJobTrans" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertJobTrans_rev1">
+      <soap12:operation soapAction="http://tempuri.org/insertJobTrans_rev1" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertManifest">
+      <soap12:operation soapAction="http://tempuri.org/insertManifest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertTrnItem">
+      <soap12:operation soapAction="http://tempuri.org/insertTrnItem" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PrintLableSingle">
+      <soap12:operation soapAction="http://tempuri.org/PrintLableSingle" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertSerial">
+      <soap12:operation soapAction="http://tempuri.org/insertSerial" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrnItemQtyRemain">
+      <soap12:operation soapAction="http://tempuri.org/TrnItemQtyRemain" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getQtyMove1">
+      <soap12:operation soapAction="http://tempuri.org/getQtyMove1" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getChemLastestLot">
+      <soap12:operation soapAction="http://tempuri.org/getChemLastestLot" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MoveBillet">
+      <soap12:operation soapAction="http://tempuri.org/MoveBillet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PrintCofCToReport">
+      <soap12:operation soapAction="http://tempuri.org/PrintCofCToReport" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertIHCCheck">
+      <soap12:operation soapAction="http://tempuri.org/insertIHCCheck" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getQtyIHC">
+      <soap12:operation soapAction="http://tempuri.org/getQtyIHC" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="closeConnection">
+      <soap12:operation soapAction="http://tempuri.org/closeConnection" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PrintLabelGRN">
+      <soap12:operation soapAction="http://tempuri.org/PrintLabelGRN" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SAT_MiscIssue">
+      <soap12:operation soapAction="http://tempuri.org/SAT_MiscIssue" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SATWebSV">
+    <wsdl:port name="SATWebSVSoap" binding="tns:SATWebSVSoap">
+      <soap:address location="http://thsatitsv002/satwebsv1/satwebsv.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SATWebSVSoap12" binding="tns:SATWebSVSoap12">
+      <soap12:address location="http://thsatitsv002/satwebsv1/satwebsv.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

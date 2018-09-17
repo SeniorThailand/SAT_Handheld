@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F35F9594-3386-4587-B7D5-1130818C0C5C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SmartDeviceProject1.frmMain</StartupObject>
+    <RootNamespace>SmartDeviceProject1</RootNamespace>
+    <AssemblyName>SmartDeviceProject1</AssemblyName>
+    <ProjectTypeGuids>{68B1623D-7FB9-47D8-8664-7ECEA3297D4F};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <PlatformFamilyName>PocketPC</PlatformFamilyName>
+    <PlatformID>b2c48bd2-963d-4549-9169-1fa021dce484</PlatformID>
+    <OSVersion>5.2</OSVersion>
+    <MyType>WindowsForms</MyType>
+    <DeployDirSuffix>SmartDeviceProject1</DeployDirSuffix>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <NativePlatformName>Windows Mobile 6 Professional SDK</NativePlatformName>
+    <FormFactorID>
+    </FormFactorID>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>$(PlatformFamilyName)=TRUE</DefineConstants>
+    <DocumentationFile>SmartDeviceProject1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <FileAlignment>512</FileAlignment>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>$(PlatformFamilyName)=TRUE</DefineConstants>
+    <DocumentationFile>SmartDeviceProject1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <FileAlignment>512</FileAlignment>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.WindowsCE.Forms" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Common, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=969db8053d3322ac">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Software\Mobile develop\System.Data.Common.DLL</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SqlClient, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=969db8053d3322ac">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Software\Mobile develop\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.1.0, Culture=neutral, PublicKeyToken=3be235df1c8d2ad3, processorArchitecture=MSIL" />
+    <Reference Include="System.SR, Version=3.5.0.0, Culture=neutral, PublicKeyToken=969db8053d3322ac, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Software\Mobile develop\System.SR.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="dialogScrap.Designer.vb">
+      <DependentUpon>dialogScrap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dialogScrap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBilletMove.Designer.vb">
+      <DependentUpon>frmBilletMove.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBilletMove.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIHCCheck.Designer.vb">
+      <DependentUpon>frmIHCCheck.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmIHCCheck.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManifest.Designer.vb">
+      <DependentUpon>frmManifest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmManifest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMiscIssue.Designer.vb">
+      <DependentUpon>frmMiscIssue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMiscIssue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMoveLoc.Designer.vb">
+      <DependentUpon>frmMoveLoc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMoveLoc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPicking.Designer.vb">
+      <DependentUpon>frmPicking.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPicking.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrintDirect.Designer.vb">
+      <DependentUpon>frmPrintDirect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrintDirect.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrintLabel.Designer.vb">
+      <DependentUpon>frmPrintLabel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrintLabel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTransfer.Designer.vb">
+      <DependentUpon>frmTransfer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTransfer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSerial.Designer.vb">
+      <DependentUpon>frmSerial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSerial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHome.Designer.vb">
+      <DependentUpon>frmHome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmHome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUnpost.Designer.vb">
+      <DependentUpon>frmUnpost.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUnpost.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="sub_MoveBillet.Designer.vb">
+      <DependentUpon>sub_MoveBillet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sub_MoveBillet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Web References\PrintCofC_R1\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\SATWebSV\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="dialogScrap.resx">
+      <DependentUpon>dialogScrap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBilletMove.resx">
+      <DependentUpon>frmBilletMove.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIHCCheck.resx">
+      <DependentUpon>frmIHCCheck.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManifest.resx">
+      <DependentUpon>frmManifest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMiscIssue.resx">
+      <DependentUpon>frmMiscIssue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMoveLoc.resx">
+      <DependentUpon>frmMoveLoc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPicking.resx">
+      <DependentUpon>frmPicking.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrintDirect.resx">
+      <DependentUpon>frmPrintDirect.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrintLabel.resx">
+      <DependentUpon>frmPrintLabel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTransfer.resx">
+      <DependentUpon>frmTransfer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSerial.resx">
+      <DependentUpon>frmSerial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHome.resx">
+      <DependentUpon>frmHome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUnpost.resx">
+      <DependentUpon>frmUnpost.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sub_MoveBillet.resx">
+      <DependentUpon>sub_MoveBillet.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://192.168.1.10/WebServiceCofC/service1.asmx">
+      <UrlBehavior>Static</UrlBehavior>
+      <RelPath>Web References\PrintCofC_R1\</RelPath>
+      <UpdateFromURL>http://192.168.1.10/WebServiceCofC/service1.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>
+      </CachedAppSettingsObjectName>
+      <CachedSettingsPropName>
+      </CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://thsatitsv002/satwebsv1/satwebsv.asmx">
+      <UrlBehavior>Static</UrlBehavior>
+      <RelPath>Web References\SATWebSV\</RelPath>
+      <UpdateFromURL>http://thsatitsv002/satwebsv1/satwebsv.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>
+      </CachedAppSettingsObjectName>
+      <CachedSettingsPropName>
+      </CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\SATWebSV\satwebsv.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\SATWebSV\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\SATWebSV\satwebsv.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\PrintCofC_R1\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\PrintCofC_R1\service1.disco" />
+    <None Include="Web References\PrintCofC_R1\service1.wsdl" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.VisualBasic.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{F184B08F-C81C-45F6-A57F-5ABD9991F28F}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
